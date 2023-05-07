@@ -1,41 +1,61 @@
-p,
+body {
+    background: #1E2827;
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+
+/* Reset styles */
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: 0;
 }
 
-ul {
-    margin: 0;
-    padding-left: 0;
-}
+/* p:last-child {
+  margin-bottom: 0;
+} */
 
-address {
-    font-style: normal;
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .list {
     list-style: none;
 }
 
-.link {
+a {
+    /*color: currentColor;*/
     text-decoration: none;
 }
 
-body {
-    background-color: #1E2827;
-    margin: 0;
+button {
+    cursor: pointer;
 }
 
-.container {
-    width: 100%;
-    /*padding-left: 15px;
-    padding-right: 15px;*/
-    padding: 0 16px;
-    margin: 0 auto;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
 }
 
 .footer {
@@ -54,7 +74,6 @@ body {
 /*  СОЦ.МЕРЕЖІ */
 
 .footer-contact {
-    display: flex;
 }
 
 .footer-menu {
@@ -93,12 +112,14 @@ body {
     line-height: 1.28;
     color: #FFFFFF;
     display: flex;
-    gap: 40px 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .footer-menu-item {
     display: flex;
     gap: 14px;
+    margin-top: 40px;
     margin-bottom: 80px;
 }
 
