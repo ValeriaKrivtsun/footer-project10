@@ -31,14 +31,16 @@ body {
 }
 
 .container {
-    /*width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0 16px;*/
+    width: 100%;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    padding: 0 16px;
     margin: 0 auto;
 }
 
 .footer {
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -51,41 +53,56 @@ body {
 
 /*  СОЦ.МЕРЕЖІ */
 
-.footer-item {
+.footer-contact {
+    display: flex;
+}
+
+.footer-menu {
+    margin: 0;
+}
+
+.footer-contact-item {
     margin-top: 40px;
 }
 
-/*.footer-logo::before {
+/*.footer-contact-logo::before {
     content: "";
     width: 40px;
     height: 40px;
     background-image: url();
 }*/
 
-.footer-list {
+
+.footer-map {
     font-size: 14px;
     line-height: 1.28;
     color: #FFFFFF;
-    margin-bottom: 20px;
-}
-.footer-list:last-child {
-    margin-bottom: 40px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    /*margin-bottom: 40px;*/
     max-width: 141px;
 }
 
-.link-phone {
+.footer-link-phone {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.28;
     color: #FFFFFF;
+    display: flex;
+    gap: 40px 20px;
 }
 
-.icon-item {
+.footer-menu-item {
     display: flex;
     gap: 14px;
     margin-bottom: 80px;
 }
 
-.icon-list {
+.footer-menu-list {
     position: relative;
     width: 40px;
     height: 40px;
@@ -93,15 +110,17 @@ body {
     border-radius: 10px;
 }
 
-.icon-soc {}
-
-.footer-soc-icon {
+.footer-icon {
     position: absolute;
     margin: 8px;
     fill: #EFEFEF;
 }
 
-.footer-container {
+
+
+.media-contact {
+    display: flex;
+    gap: 110px;
 }
 
 
@@ -109,26 +128,22 @@ body {
 
 /*  ЛІНКИ */
 
-.footer-wrap {
-    display: flex;
-}
-
-.footer-link-item {
-    /*display: flex;
-    width: 63px;
-    flex-wrap: wrap;*/
+.footer-media-item {
     display: flex;
     gap: 14px;
     align-items: baseline;
     flex-direction: column;
 }
 
-.footer-link-list {
 
-}
-
-.footer-link {
+.footer-media-link {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
     color: #FFFFFF;
 }
 
@@ -136,23 +151,31 @@ body {
 
 /* ДОД.ІНФОРМЦІЯ */
 
-.footer-text {
-    color: #C6CDD1;
-    opacity: 0.9;
+.rules-text {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
+    color: #C6CDD1;
+    opacity: 0.9;
 }
 
-.polit-item {
+.rules-item {
     display: flex;
     gap: 14px;
 }
 
-.text {
+.footer-rules-text {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    text-align: right;
+    letter-spacing: -0.02em;
     margin-top: 14px;
     color: #C6CDD1;
     opacity: 0.9;
-    font-size: 12px;
-    line-height: 1.16;
 }
 
